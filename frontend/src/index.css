@@ -1,5 +1,27 @@
 main {
+  color: #fff;
   min-height: 80vh;
+}
+.form-control {
+  color: #fff;
+}
+.form-control:focus {
+  color: #fff;
+}
+
+.searchForm:focus {
+  background-color: #20374c;
+  color: azure;
+}
+
+.searchForm {
+  background-color: #20374c;
+  color: #fff;
+}
+
+.searchButton {
+  display: inline-block;
+  min-width: none;
 }
 
 h3 {
