@@ -1,8 +1,16 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { LinkContainer } from "react-router-bootstrap";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { LinkContainer, Link } from "react-router-bootstrap";
+import {
+  Navbar,
+  Nav,
+  Container,
+  NavDropdown,
+  Dropdown,
+  DropdownButton,
+  Button,
+} from "react-bootstrap";
 import SearchBox from "./SearchBox";
 import { logout } from "../actions/userActions";
 
@@ -23,13 +31,27 @@ const Header = () => {
           <LinkContainer to="/">
             <Navbar.Brand>
               {" "}
-              <i className="fas fa-guitar"></i>MuStore
+              <i className="fas fa-guitar"></i>MusicStory
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className="ms-auto">
+              <DropdownButton
+                id="dropdown-basic-button"
+                variant="dark"
+                title="Instruments"
+              >
+                <Dropdown.Item href="/search/guitar">Guitar</Dropdown.Item>
+                <Dropdown.Item href="/search/drums">Drums</Dropdown.Item>
+                <Dropdown.Item href="/search/bass">Bass</Dropdown.Item>
+
+                <Dropdown.Item href="/search/amp">Amplifiers</Dropdown.Item>
+                <Dropdown.Item href="/search/accessories">
+                  Accessories
+                </Dropdown.Item>
+              </DropdownButton>
               <LinkContainer to="/cart">
                 <Nav.Link>
                   <i className="fas fa-shopping-cart"></i> Cart
@@ -64,6 +86,12 @@ const Header = () => {
                   </LinkContainer>
                 </NavDropdown>
               )}
+              <LinkContainer to="/ContactUs">
+                <Nav.Link>
+                  <i className="far fa-address-card"></i>
+                  Contact Us
+                </Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>

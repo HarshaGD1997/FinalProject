@@ -12,7 +12,7 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: "MuStore",
+  title: "MusicStory",
   description: "We sell the best products for cheap",
   keywords: "Guitar,Electric Guitar,Drums, Bass ...",
 };
