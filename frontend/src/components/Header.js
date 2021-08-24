@@ -31,7 +31,8 @@ const Header = () => {
           <LinkContainer to="/">
             <Navbar.Brand>
               {" "}
-              <i className="fas fa-guitar"></i>MusicStory
+              <i className="fas fa-guitar"></i>
+              <b>MusicStory</b>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -44,13 +45,11 @@ const Header = () => {
                 title="Instruments"
               >
                 <Dropdown.Item href="/search/guitar">Guitar</Dropdown.Item>
-                <Dropdown.Item href="/search/drums">Drums</Dropdown.Item>
+                <Dropdown.Item href="/search/drum">Drums</Dropdown.Item>
                 <Dropdown.Item href="/search/bass">Bass</Dropdown.Item>
 
                 <Dropdown.Item href="/search/amp">Amplifiers</Dropdown.Item>
-                <Dropdown.Item href="/search/accessories">
-                  Accessories
-                </Dropdown.Item>
+                <Dropdown.Item href="/search/AC">Accessories</Dropdown.Item>
               </DropdownButton>
               <LinkContainer to="/cart">
                 <Nav.Link>
@@ -89,7 +88,7 @@ const Header = () => {
               <LinkContainer to="/ContactUs">
                 <Nav.Link>
                   <i className="far fa-address-card"></i>
-                  Contact Us
+                  About Us
                 </Nav.Link>
               </LinkContainer>
             </Nav>

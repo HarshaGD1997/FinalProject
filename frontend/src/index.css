@@ -49,6 +49,15 @@ h2 {
   margin: 0.1rem;
 }
 
+img {
+  height: 40vh;
+  width: 150vh;
+}
+.location {
+  position: fixed;
+  top: 50vh;
+}
+
 /* carousel */
 .carousel-item-next,
 .carousel-item-prev,
@@ -65,8 +74,8 @@ h2 {
 }
 
 .carousel img {
-  height: 350px;
-  width: 769%;
+  height: 500px;
+  width: 150vh;
   padding: 10px;
   margin: 50px;
   border-radius: 10%;

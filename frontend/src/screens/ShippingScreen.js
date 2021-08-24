@@ -31,7 +31,7 @@ const ShippingScreen = ({ history }) => {
           <Form.Label>Address</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter address here"
+            placeholder="Enter address "
             value={address}
             required
             onChange={(e) => setAddress(e.target.value)}

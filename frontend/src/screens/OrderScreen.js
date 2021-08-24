@@ -222,9 +222,6 @@ const OrderScreen = ({ match, history }) => {
                     >
                       Mark As Delivered
                     </Button>
-                    <Button type="button" className="btn btn-inline">
-                      Ship
-                    </Button>
                   </ListGroup.Item>
                 )}
             </ListGroup>

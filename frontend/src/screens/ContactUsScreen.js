@@ -10,13 +10,31 @@ const ContactUsScreen = () => {
           Go Back
         </Link>
         <Container className="container-fluid">
-          <br />
           <Row>
-            <Col>Email Address : TestMail@gmail.com</Col>
-          </Row>
-          <br />
-          <Row>
-            <Col>Located At : TestAddress, TestArea, Bengaluru</Col>
+            <Col>
+              <div className="location">
+                <Col>
+                  <strong>Phone Number :</strong>
+                  <br />
+                  9535205573
+                  <br />
+                  <strong>Email Address : </strong>
+                  <br />
+                  TestMail@gmail.com
+                  <br />
+                  <br />
+                </Col>
+                <strong>Located At : </strong>
+                <br />
+                MusicStory, MLA Layout,
+                <br />
+                Kalena Agrahara
+                <br />
+                Bannerghatta Road
+                <br />
+                Bangalore{" "}
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>
