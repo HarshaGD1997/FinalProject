@@ -1,6 +1,7 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import muStore from "./muStore.jpg";
 
 const ContactUsScreen = () => {
   return (
@@ -11,19 +12,29 @@ const ContactUsScreen = () => {
         </Link>
         <Container className="container-fluid">
           <Row>
-            <Col>
+            <Col xs={6} md={4}>
+              <Image
+                className="contactusImg"
+                src={muStore}
+                alt="img"
+                roundedCircle
+                fluid
+              />
+              <strong>Phone Number :</strong>
+              <br />
+              9535205573
+              <br />
+              <strong>Email Address : </strong>
+              <br />
+              TestMail@gmail.com
+              <br />
+              <br />
               <div className="location">
-                <Col>
-                  <strong>Phone Number :</strong>
-                  <br />
-                  9535205573
-                  <br />
-                  <strong>Email Address : </strong>
-                  <br />
-                  TestMail@gmail.com
-                  <br />
-                  <br />
-                </Col>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <strong>Located At : </strong>
                 <br />
                 MusicStory, MLA Layout,
