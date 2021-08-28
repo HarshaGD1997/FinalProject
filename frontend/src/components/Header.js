@@ -13,6 +13,7 @@ import {
 } from "react-bootstrap";
 import SearchBox from "./SearchBox";
 import { logout } from "../actions/userActions";
+import mapIcon from "./map.svg";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -87,7 +88,7 @@ const Header = () => {
               )}
               <LinkContainer to="/ContactUs">
                 <Nav.Link>
-                  <i className="far fa-address-card"></i>
+                  <i className="fa fa-map"></i>
                   About Us
                 </Nav.Link>
               </LinkContainer>
