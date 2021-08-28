@@ -2,18 +2,19 @@ main {
   color: white;
   min-height: 80vh;
 }
+
 .form-control {
-  color: white;
+  color: #fff;
+}
+
+.form-control:focus {
+  color: #fff;
 }
 
 .footer {
   display: block;
   background-color: black;
   color: #fff;
-}
-
-.form-control:focus {
-  color: white;
 }
 
 .searchForm:focus {
