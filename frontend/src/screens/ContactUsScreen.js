@@ -1,29 +1,40 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Image, Row, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import muStore from "./musicstore.jpg"
 
 const ContactUsScreen = () => {
   return (
     <>
-      <div className="contact_info">
+       <div className="contact_info">
         <Link className="btn btn-light" to="/">
           Go Back
         </Link>
         <Container className="container-fluid">
           <Row>
-            <Col>
+            <Col xs={6} md={4}>
+              <Image
+                className="contactusImg"
+                src={muStore}
+                alt="img"
+                roundedCircle
+                fluid
+              />
+              <strong>Phone Number :</strong>
+              <br />
+              9535205573
+              <br />
+              <strong>Email Address : </strong>
+              <br />
+              TestMail@gmail.com
+              <br />
+              <br />
               <div className="location">
-                <Col>
-                  <strong>Phone Number :</strong>
-                  <br />
-                  9535205573
-                  <br />
-                  <strong>Email Address : </strong>
-                  <br />
-                  TestMail@gmail.com
-                  <br />
-                  <br />
-                </Col>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <strong>Located At : </strong>
                 <br />
                 MusicStory, MLA Layout,
@@ -41,5 +52,4 @@ const ContactUsScreen = () => {
     </>
   );
 };
-
 export default ContactUsScreen;

@@ -12,6 +12,15 @@ main {
   color: #fff;
 }
 
+.contactusImg {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 40;
+  height: 30vh;
+  width: 150vh;
+  margin-left: 60vh;
+}
+
 .form-control:focus {
   color: white;
 }

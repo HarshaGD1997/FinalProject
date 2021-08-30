@@ -115,7 +115,7 @@ const OrderScreen = ({ match, history }) => {
                   Delivered on {order.deliveredAt}
                 </Message>
               ) : (
-                <Message variant="danger">Not Delivered</Message>
+                <Message variant="danger">Not Delivered  Expected Delivery by 2-5days<br/> Contact-us with Order ID for more info</Message>
               )}
             </ListGroup.Item>
 
